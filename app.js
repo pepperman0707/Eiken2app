@@ -182,7 +182,6 @@ function revealAnswer() {
   document.getElementById("meaning-area").style.display = "block";
   document.querySelector(".btn-main").style.display = "none";
   answerRevealed = true;
-  sessionScore.done++;
 }
 
 function evalEn2Jp(rating) {
@@ -193,6 +192,7 @@ function evalEn2Jp(rating) {
   } else {
     removeWeak(currentWord.word);
   }
+  sessionScore.done++;
   proceedNext();
 }
 
