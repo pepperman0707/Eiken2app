@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>英検2級 単語アプリ</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">
+英検2級 単語トレーニング
+</div>
+
+<div id="question">
+読み込み中...
+</div>
+
+<input
+id="answer"
+type="text"
+placeholder="英単語を入力"
+/>
+
+<br>
+
+<button onclick="checkAnswer()">
+答え合わせ
+</button>
+
+<div id="result"></div>
+
+<div class="menu">
+
+<button onclick="next()">
+次の問題
+</button>
+
+<button onclick="showWeak()">
+苦手復習
+</button>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
