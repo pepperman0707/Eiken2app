@@ -163,7 +163,7 @@ function showEn2Jp() {
     <div class="mode-label">英語 → 日本語　${prog}</div>
     <div id="question">${currentWord.word}</div>
 
-    <button class="btn-main" onclick="revealAnswer()">意味を見る</button>
+    <button class="btn-reveal" onclick="revealAnswer()">意味を見る</button>
     <div id="meaning-area" style="display:none">
       <div class="meaning-text">${currentWord.meaning}</div>
       <div class="example-box"><i>"${currentWord.example}"</i></div>
@@ -180,7 +180,7 @@ function showEn2Jp() {
 
 function revealAnswer() {
   document.getElementById("meaning-area").style.display = "block";
-  document.querySelector(".btn-main").style.display = "none";
+  document.querySelector(".btn-reveal").style.display = "none";
   answerRevealed = true;
 }
 

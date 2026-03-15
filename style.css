@@ -55,6 +55,20 @@ input[type="text"] {
 /* ── ボタン共通 ── */
 button { cursor: pointer; border: none; border-radius: 10px; }
 
+.btn-reveal {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 14px;
+  font-size: 16px;
+  background: #4aa3ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-reveal:hover { background: #2b8cff; }
+
 .btn-main {
   display: block;
   width: 100%;
